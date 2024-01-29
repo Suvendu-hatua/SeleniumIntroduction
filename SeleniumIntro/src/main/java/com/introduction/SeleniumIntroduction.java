@@ -4,6 +4,8 @@ import org.openqa.selenium.InsecureCertificateException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class SeleniumIntroduction {
 
 	public static void main(String[] args) {
@@ -12,7 +14,9 @@ public class SeleniumIntroduction {
 
 		//Microsoft Edge
 
-		System.setProperty("webdriver.edge.driver", "C:\\Users\\GEZ4V7X\\Desktop\\Selenium Tutorial\\msedgedriver.exe");
+//		System.setProperty("webdriver.edge.driver", "C:\\Users\\GEZ4V7X\\Desktop\\Selenium Tutorial\\msedgedriver.exe");
+		
+		WebDriverManager.edgedriver().setup();
 		
 		//creating instance of webdriver
 		WebDriver driver = new EdgeDriver();
