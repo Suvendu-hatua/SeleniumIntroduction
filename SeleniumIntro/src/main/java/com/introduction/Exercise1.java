@@ -6,16 +6,17 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+
 public class Exercise1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// for Invalid Username and Password........
 		
 		//setting up Edge Driver
 		
 		WebDriverManager.edgedriver().setup();
 		
-		//creating instance of WebDriver
+		//creating instance of EdgeDriver
 		
 		WebDriver driver=new EdgeDriver();
 		
@@ -37,6 +38,8 @@ public class Exercise1 {
 		driver.findElement(By.xpath("//input[@value='Continue']")).click();
 		
 		System.out.println(driver.findElement(By.xpath("//div[@class='alert alert-danger alert-dismissible']")).getText());
+		
+		
 	}
 
 }

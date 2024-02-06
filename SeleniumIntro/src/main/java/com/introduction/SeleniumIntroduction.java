@@ -14,9 +14,9 @@ public class SeleniumIntroduction {
 
 		//Microsoft Edge
 
-//		System.setProperty("webdriver.edge.driver", "C:\\Users\\GEZ4V7X\\Desktop\\Selenium Tutorial\\msedgedriver.exe");
+		System.setProperty("webdriver.edge.driver", "C:\\Users\\GEZ4V7X\\Desktop\\Selenium Tutorial\\msedgedriver.exe");
 		
-		WebDriverManager.edgedriver().setup();
+//		WebDriverManager.edgedriver().setup();
 		
 		//creating instance of webdriver
 		WebDriver driver = new EdgeDriver();
